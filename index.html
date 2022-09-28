@@ -1,74 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create a Mailchimp Account</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
     <main>
-        <div class="logo__box">
-            <figure>
-                <img src="https://place-hold.it/280x320" alt="Smiling Chimp Face" />
-            </figure>
-        </div>
+      <div class="logo__box">
+        <figure>
+          <img src="https://place-hold.it/280x320" alt="Smiling Chimp Face" />
+        </figure>
+      </div>
 
-        <div class="main__container">
-            <h1>Welcome to Mailchimp</h1>
-            <p class="main__first-p">Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account?<a href="#"> Log in</a></p>
-            
-            <div class="form__box">
-                <form method="post" action="/create-account">
-                    <fieldset>
-                        <div class="form__input-container">
-                            <label for="email" > 
-                                <p><strong>Email</strong></p>
-                                <input type="email" name="email" required />
-                            </label>
-                      
-                            <label for="username" >
-                               <p><strong>Username</strong></p>
-                               <input type="text" id="username" name="uname" minlength="5" maxlength="40" required/>
-                            </label>
-                      
-                            <label for="password" class="form__password-box">
-                                <p><strong>Password</strong></p>
-                                <input type="password" id="password" name="password" minlength="8" pattern="/^(?=.*\d)(?=.*[A-Z])(?!.*[^a-zA-Z0-9@#$^+=])(.{8,})$/" title="Please include at least 1 uppercase character, 1 lowercase character, 1 special character and 1 number." required/>
-                                <span>
-                                    <i class="fa-solid fa-eye"></i>
-                                    Show
-                                </span>
-                            </label>
-                        </div>
-                        <div class="format__password-box">
-                            <ul class="format__password-list">
-                                <li>One lowercase character</li>
-                                <li>One uppercase character</li>
-                                <li>One number</li>
-                              <li>One special character</li>
-                                <li>8 characters minimum</li>
-                            </ul>
-                        </div>
-                    </fieldset>
-                    <div class="form__footer">
-                        <button type="submit" class="button__sign-up" value="Sign Up">Sing Up</button>
-                        <div class="form__footer-consent">
-                            <input type="checkbox" id="consent" name="consent"/>
-                            <label for="consent"><p>I don't want to recieve emails about new Mailchimp products, best practices, or special offers.</p></label>
-                        </div>
-                    </div>
-                </form>
+      <div class="main__container">
+        <h1>Welcome to Mailchimp</h1>
+        <p class="main__first-p">
+          Find your people. Engage your customers. Build your brand. Do it all
+          with Mailchimp's Marketing Platform. Already have an account?<a href="#">Log in</a>
+        </p>
+        <div class="form__box">
+          <form method="post" action="/create-account">
+            <fieldset>
+              <div class="form__input-container">
+                <label for="email">
+                  <p><strong>Email</strong></p>
+                  <input type="email" name="email" required />
+                </label>
+
+                <label for="username">
+                  <p><strong>Username</strong></p>
+                  <input
+                    type="text"
+                    id="username"
+                    name="uname"
+                    minlength="5"
+                    maxlength="40"
+                    required
+                  />
+                </label>
+
+                <label for="password" class="form__password-box">
+                  <p><strong>Password</strong></p>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    minlength="8"
+                    pattern="/^(?=.*\d)(?=.*[A-Z])(?!.*[^a-zA-Z0-9@#$^+=])(.{8,})$/"
+                    title="Please include at least 1 uppercase character, 1 lowercase character, 1 special character and 1 number."
+                    required
+                  />
+                  <span><i class="fa-solid fa-eye"></i> Show</span>
+                </label>
+              </div>
+              <div class="format__password-box">
+                <ul class="format__password-list">
+                  <li>One lowercase character</li>
+                  <li>One uppercase character</li>
+                  <li>One number</li>
+                  <li>One special character</li>
+                  <li>8 characters minimum</li>
+                </ul>
+              </div>
+            </fieldset>
+            <div class="form__footer">
+              <button type="submit" class="button__sign-up" value="Sign Up">
+                Sing Up
+              </button>
+              <div class="form__footer-consent">
+                <input type="checkbox" id="consent" name="consent" />
+                <label for="consent">
+                    <p>I don't want to recieve emails about new Mailchimp products,best practices, or special offers.</p>
+                </label>
+              </div>
             </div>
-        
-            <div class="privacy__text">    
-                <p>By clicking the "Sing Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
-            </div>
+          </form>
         </div>
+        <div class="privacy__text">
+          <p>By clicking the "Sing Up" button, you are creating a Mailchimpaccount, and you agree to Mailchimp's
+            <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.
+          </p>
+        </div>
+      </div>
     </main>
+    
+    
+    <script src="https://kit.fontawesome.com/17039c3983.js"crossorigin="anonymous"></script>
 
-
-    <script src="https://kit.fontawesome.com/17039c3983.js" crossorigin="anonymous"></script>     
-</body>
+  </body>
 </html>
