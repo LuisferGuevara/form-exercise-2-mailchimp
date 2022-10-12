@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+body, html {
   font-family: sans-serif;
 }
 
@@ -24,11 +24,10 @@ main {
   margin-left: 70px;
   display: flex;
   flex-direction: column;
-
-  /* justify-content: space-between; */
 }
+
 h1 {
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 50px;
 }
 .main__first-p {
@@ -51,7 +50,6 @@ fieldset {
   display: flex;
   flex-direction: column;
 }
-
 .form__password-box {
   position: relative;
 }
